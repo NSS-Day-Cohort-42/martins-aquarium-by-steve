@@ -1,7 +1,11 @@
 .locations {
     border: 3px dotted orangered;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .location__image {
-    height: 15rem;
+    width: 15rem;
 }

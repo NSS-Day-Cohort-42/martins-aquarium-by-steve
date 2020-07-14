@@ -5,7 +5,7 @@ const fishCollection = [
         species: "Blue Tang",
         length: 4,
         location: "Great Barrier Reef",
-        image: "./images/bluetang.jpeg"
+        image: "./images/fish/bluetang.jpeg"
     },
     {
         name: "Nemo",
@@ -13,7 +13,7 @@ const fishCollection = [
         species: "Clown Fish",
         length: 5,
         location: "Great Barrier Reef",
-        image: "./images/clownfish.jpeg"
+        image: "./images/fish/clownfish.jpeg"
     },
     {
         name: "Bruce",
@@ -21,7 +21,7 @@ const fishCollection = [
         species: "Great White Shark",
         length: 25,
         location: "Great Barrier Reef",
-        image: "./images/nado.jpeg"
+        image: "./images/fish/nado.jpeg"
     }
 ]
 

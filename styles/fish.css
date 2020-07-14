@@ -1,7 +1,11 @@
 .fishes {
     border: 3px dotted dodgerblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .fish__image {
-    height: 15rem;
+    width: 15rem;
 }
