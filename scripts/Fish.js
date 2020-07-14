@@ -1,4 +1,4 @@
-export const Fish = (fishObj) => {
+export const FishAsHTML = (fishObj) => {
     return `
         <section class="fish card">
             <div><img  class="fish__image image--card" src="${fishObj.image}" /></div>
