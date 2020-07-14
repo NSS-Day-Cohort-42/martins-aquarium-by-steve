@@ -13,7 +13,6 @@ export const FishList = () => {
     for(const currentFishObj of fishes){
         fishHTMLRepresentations += FishAsHTML(currentFishObj)
     }
-    console.log(fishHTMLRepresentations)
 
     // updating HTML of DOM element with Fish List HTML
     contentElement.innerHTML += `
