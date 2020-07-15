@@ -5,3 +5,12 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.quote__author::before {
+    content:" - ";
+}
+
+.quote__author {
+    margin-top: 1rem;
+    font-style: italic;
+}
