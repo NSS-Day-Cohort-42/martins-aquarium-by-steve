@@ -74,10 +74,5 @@ const fishCollection = [
 ]
 
 export const useFish = () => {
-    //.slice() allows you to return a copy of fishCollection
     return fishCollection.slice()
-}
-
-export const addFish = (fish) => {
-    fishCollection.push(fish)
 }
