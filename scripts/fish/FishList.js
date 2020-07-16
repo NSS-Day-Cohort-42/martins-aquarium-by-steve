@@ -1,16 +1,13 @@
 // this module creates the list of fish to add to the DOM
-import {useFish} from "./FishDataProvider.js"
+import { mostHolyFish, soldierFish, nonHolyFish } from "./FishDataProvider.js"
 import {FishAsHTML} from "./Fish.js"
 
-export const FishList = () => {
-    //gets reference to element on the DOM
-    const contentElement = document.querySelector(".content--left")
+const contentElement = document.querySelector(".content--left")
 
-    // collection of fish from FishDataProvider
-    const fishes = useFish()
-
+const addFishToDOM = (theArrayOfFish) => {
     let fishHTMLRepresentations = ""
-    for(const currentFishObj of fishes){
+
+    for(const currentFishObj of theArrayOfFish){
         fishHTMLRepresentations += FishAsHTML(currentFishObj)
     }
 
@@ -20,5 +17,20 @@ export const FishList = () => {
             ${fishHTMLRepresentations}
         </article>
     `
+}
+
+export const FishList = () => {
+    //gets reference to element on the DOM
+    const holyFish = mostHolyFish()
+    addFishToDOM(holyFish)
+
+    const soldiers = soldierFish()
+    addFishToDOM(soldiers)
+
+
+    const plebs = nonHolyFish()
+    addFishToDOM(plebs)
+
+
 
 }
